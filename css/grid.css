@@ -1,0 +1,585 @@
+.item{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.itemMenu{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+/* mobile VIEW */
+    #container{
+        display: grid;
+        width: 100%;
+        height: 95vh;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(7, 1fr);;
+    }
+
+    #item1{
+        background-color: #0E1628;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #item2{
+        background-color:#F13A4B;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #item3{
+        background-color:#4685C4;
+        grid-row: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #item4{
+        background-color:#223349;
+        grid-row: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #item5{
+        background-color:#BEE3E5;
+        grid-row: 7;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #item6{
+        background-color:#47BD99;
+        grid-row: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #item7{
+        background-color:#FFD170;
+        grid-row: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+/* TABLET VIEW */
+@media (min-width: 720px) and (max-width: 1023px){
+    #container{
+        display: grid;
+        width: 100%;
+        height: 95vh;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 10% 25% 25% 20% 20%; 
+    }
+
+    #item1{
+        background-color: #0E1628;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #item2{
+        background-color: #F13A4B;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 6;
+    }
+
+    #item3{
+        background-color: #4685C4;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #item4{
+        background-color: #223349;
+        grid-row: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    #item5{
+        background-color: #BEE3E5;
+        grid-row: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    #item6{
+        background-color:#47BD99;
+        grid-row: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #item7{
+        background-color: #FFD170;
+        grid-row: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 1024px) {
+    #container{
+        display: grid;
+        width: 100%;
+        height: 95vh;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 25% 25% 25% 25%; 
+        grid-template-rows: 10% 30% 20% 20% 20%; 
+    }
+
+    #item1{
+        background-color: #0E1628;
+        grid-row: 1; 
+        grid-column-end: 2; 
+    }
+
+    #item2{
+        background-color: #F13A4B;
+        grid-row: 1; 
+        grid-column-start: 2; 
+        grid-column-end: 5; 
+    }
+
+    #item3{
+        background-color: #4685C4;
+        grid-row: 2;
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+    }
+
+    #item3{
+        background-color: #4685C4;
+        grid-row: 2; 
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+    }
+
+    #item4{
+        background-color: #223349;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #item5{
+        background-color: #BEE3E5;
+        grid-row: 3;
+        grid-column-start: 4;
+        grid-column-end: 4;
+    }
+
+    #item6{
+        background-color: #47BD99;
+        grid-row: 4;
+        grid-column-start: 4;
+        grid-column-end: 4;
+    }
+
+    #item7{
+
+        background-color: #FFD170;
+        grid-row: 5;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+}
+/******pagina informaciom *********/
+/* mobile VIEW */
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.grid{ 
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+    "navegacion" 
+     "cabecera"  
+     "principal"
+     "publicidad"
+     "pie"       ;
+   
+
+}
+
+header{
+    background-color: #F13A4B;
+    grid-area:"cabecera" ;
+}
+
+nav{
+    background-color: aqua;
+    grid-area: navegacion ;
+}
+
+section{
+    background-color:#FFD170;
+    grid-area: principal ;
+}
+
+aside{
+    background-color: #47BD99;
+    grid-area: publicidad ;
+}
+ footer{
+    background-color:coral;
+    grid-area: pie ;
+ }
+
+ #inf1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ #inf2{
+
+    color:black;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+
+}
+
+#inf3{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#inf4{
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#inf5{
+
+    color: white;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    
+}
+
+
+
+
+
+
+
+ /* DESKTOP VIEW */
+@media (min-width: 1024px) {
+    
+    .grid{ 
+        grid-template-areas:
+        "navegacion cabecera publicidad"
+        "navegacion principal publicidad"
+        "navegacion pie publicidad"
+        
+     }
+
+     #inf2{
+
+        color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+
+}
+
+/* TABLET VIEW */
+@media (min-width: 720px) and (max-width: 1023px){
+
+    .grid{ 
+        grid-template-areas:
+        "navegacion cabecera publicidad"
+        "principal principal principal"
+        "pie pie pie"
+        
+     }
+
+     #inf2{
+
+        color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+
+    footer{
+        background-color:black;
+        grid-area: pie ;
+     }
+
+}
+
+/******pagina imagenes *********/
+
+/* mobile VIEW */
+.gridImg{ 
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+    "titulo"
+    "navegacion"
+    "imagen1"
+    "imagen2"
+    "imagen3"
+    "imagen4"
+    "publicidad"
+    "pie"
+    ;
+   
+
+}
+
+#img0{
+    background-color: #47BD99;
+    grid-area:titulo ;
+}
+
+nav{
+    background-color: blue;
+    grid-area:navegacion ;
+}
+
+.img1{
+    background-color: azure;
+    grid-area:imagen1 ;
+}
+
+.img2{
+    background-color: aliceblue;
+    grid-area:imagen2 ;
+}
+
+.img3{
+    background-color: antiquewhite;
+    grid-area:imagen3 ;
+}
+
+.img4{
+    background-color: blanchedalmond;
+    grid-area:imagen4 ;
+}
+
+aside{
+    background-color: blueviolet;
+    grid-area:publicidad ;
+}
+
+footer{
+    background-color: crimson;
+    grid-area:pie ;
+}
+
+.centrado{
+    color:navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.paisajes{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+
+/* TABLET VIEW */
+@media (min-width: 720px) and (max-width: 1023px){
+
+    .gridImg{ 
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-areas:
+        "titulo titulo"
+        "navegacion imagen0 "
+        "navegacion imagen1"
+        "navegacion imagen3"
+        "navegacion imagen2"
+        " navegacion imagen4 "
+        "publicidad publicidad"
+        "pie pie";
+        
+    
+    }
+
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 1024px){
+
+    .gridImg{ 
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-areas:
+        "titulo titulo tiulo"
+        "navegacion imagen0 publicidad"
+        "navegacion imagen1 publicidad"
+        "navegacion imagen2 publicidad"
+        "navegacion imagen3 publicidad"
+        " navegacion imagen4 publicidad"
+        "pie pie pie";
+        
+    }  
+
+}
+/******pagina contacto *********/
+
+/* mobile VIEW */
+.gridcont{ 
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+    "nav"
+    "cabecera"
+    "contacto" 
+    "aside"
+    "pie"   ;
+   
+
+}
+
+
+header{
+    background-color: cyan;
+    grid-area:cabecera;
+}
+
+
+.div1{
+    background-color: darkcyan;
+    grid-area:nav;
+}
+
+
+.contacto{
+    background-color: darkgoldenrod;
+    grid-area:contacto;
+}
+
+
+footer{
+    background-color: indigo;
+    grid-area:pie;
+}
+
+.centrado{
+    color:navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cont{
+    color:navy;
+    display: flex;
+    align-items: center;
+
+}
+
+.publi{
+    background-color: black;
+    grid-area:aside;
+
+ }
+
+
+
+
+/* TABLET VIEW */
+@media (min-width: 720px) and (max-width: 1023px){
+
+    .gridcont{ 
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-areas:
+        "nav nav nav"
+        "cabecera cabecera cabecera"
+        "contacto contacto aside" 
+        "pie pie pie"   ;
+       
+    
+    } 
+
+.publi{
+    background-color: black;
+    grid-area:aside;
+
+ }
+
+}
+
+
+/* DESKTOP VIEW */
+@media (min-width: 1024px){
+
+    .gridcont{ 
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-areas:
+        " cabecera cabecera cabecera cabecera"
+        " nav contacto contacto aside" 
+        "pie pie pie pie"   ;
+       
+    
+    } 
+
+
+
+
+
+
+
+
+}
