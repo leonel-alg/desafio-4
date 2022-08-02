@@ -14,6 +14,19 @@
     
 }
 
+@keyframes efecto {
+    0%{ width: 100px; }
+    12%{ width: 50px; }
+    25%{ width: 300px; }
+    50%{ width: 200px;
+      background-color: red; }
+    75%{ width: 300px;}
+    100%{ width: 100px;
+      background-color:green;}
+ }
+
+ 
+
 
 /* mobile VIEW */
     #container{
@@ -30,8 +43,27 @@
         background-color: #0E1628;
         grid-row: 1;
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 2;  
+        width: 100px;
+        height: 100px;
+        transition: height 2s, width 1s; 
+
+ }
+
+ #item1:hover{
+    height: 100px; width: 470px;
+
+ }
+
+
+    #item4:hover  {
+        height: 315px; width: 1370px;
+        padding: 20px;
+        background-color: cyan;
+
+
     }
+
 
     #item2{
         background-color:#F13A4B;
@@ -52,6 +84,8 @@
         grid-row: 4;
         grid-column-start: 1;
         grid-column-end: 2;
+        width: 100px; height: 100px;
+        transition: all 2s;    
     }
 
     #item5{
@@ -66,6 +100,16 @@
         grid-row: 6;
         grid-column-start: 1;
         grid-column-end: 2;
+        width: 100px;
+        height: 200px;
+        background-color: green;
+        animation-name: efecto;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 10s;
+     
+     
     }
 
     #item7{
